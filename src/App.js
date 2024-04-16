@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
 import { SignUp } from './features/auth/components/SignUp';
 import SignupPage from './pages/SignupPage';
-
+// import Cart from './features/cart/Cart';
+import CartPage from './pages/CartPage';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/Signup",
     element: <SignupPage></SignupPage>,
+  },
+  {//only for testing
+    path: "/cart",
+    element: <CartPage></CartPage>,
   },
 ]);
 
