@@ -8,12 +8,15 @@ import { SignUp } from './features/auth/components/SignUp';
 import SignupPage from './pages/SignupPage';
 // import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
+import Checkout from './pages/Checkout';
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Link,
 } from "react-router-dom";
+
+import ProductDetailsPage from './pages/ProductDetailsPage';
 
 const router = createBrowserRouter([
   {
@@ -28,9 +31,17 @@ const router = createBrowserRouter([
     path: "/Signup",
     element: <SignupPage></SignupPage>,
   },
-  {//only for testing
+  {
     path: "/cart",
     element: <CartPage></CartPage>,
+  },
+  {
+    path: "/checkout",
+    element: <Checkout></Checkout>,
+  },
+  {
+    path: "/product-details",
+    element: <ProductDetailsPage></ProductDetailsPage>,
   },
 ]);
 
