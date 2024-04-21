@@ -8,3 +8,15 @@ export function fetchAllProducts() {
   }
   );
 }
+
+export function fetchProductsByFilters(filter) {
+
+  // objectfilter ={"category": " cat name"}
+  return new Promise(async(resolve) =>{
+    // not hardcoded
+    const response = await fetch('http://localhost:8080/products')
+    const data= await response.json()
+    resolve({data})
+  }
+  );
+}
